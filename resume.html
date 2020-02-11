@@ -10,17 +10,29 @@
 </head>
 <body>
     <nav id='myTopnav'>
-        <a href="contact.html">Contact</a>
-        <a class="active" href="services.html">Services</a>
-        <a href="home.html">Home</a>
+        <a class='active' href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="nav_change()">
             <img class='menu' src="menu.jpg" alt="Menu">
         </a>
     </nav>
-    <h1>Services</h1>
-    <p>
-        This could be 3ish flexbox's with services and pricing
-    </p>
+
+
+    <h1> Get a free estimate</h1>
+    <div class="formbox">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            <label for="priorties">Description of priorties</label>
+            <textarea id="priorties" placeholder="List priorties here"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
     <footer>
       <div style="padding: 10px">
