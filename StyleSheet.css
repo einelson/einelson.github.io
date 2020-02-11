@@ -19,7 +19,7 @@ nav a:hover {
    color: black;
 }
 nav .active {
-   background-color: rgb(38, 38, 156);
+   background-color: rgb(6, 195, 253);
    color: black;
 }
 nav .icon {
@@ -62,10 +62,10 @@ footer {
 }
 footer a {
    display: inline-block;
-   color: rgb(38, 38, 156);
+   color: rgb(6, 195, 253);
    padding: 8px 10px;
    text-decoration: none;
-   border: 2px solid rgb(38, 38, 156);
+   border: 2px solid rgb(6, 195, 253);
    border-radius: 5px;
    margin: 5px;
    font-family: Tahoma;
