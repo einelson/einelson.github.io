@@ -8,13 +8,15 @@ nav {
    list-style-type: none;
    margin: 0;
    padding: 0;
+   padding-left: 10px;
    overflow: hidden;
    font-family: Tahoma;
+   font-size: 16px;
    text-decoration: none; 
 }
 nav a {
    display: block;
-   color: white;
+   color: rgb(165, 165, 165);
    padding: 16px 20px;
    text-align: center;
    text-decoration: none;
@@ -52,29 +54,16 @@ img {
    padding-bottom: 50px;
    padding-top: 50px;
 }
+.container > h1{
+   color: rgb(165, 165, 165);
+}
+.container > h2{
+   color: rgb(165, 165, 165);
+}
 
-@media screen and (max-width: 600px) {
-   nav a {display: none;}
-   nav a.icon {
-     float: right;
-     display: block;
-   }
- }
 /* for mobile phones */
 @media screen and (max-width: 600px) {
    /* general / home */
-   nav.responsive {position: relative;}
-   nav.responsive a.icon {
-     position: absolute;
-     right: 0;
-     top: 0;
-   }
-   nav.responsive a {
-     float: none;
-     display: block;
-     text-align: left;
-   }
-
    p {
        margin-top: 20px;
        margin-bottom: 20px;
