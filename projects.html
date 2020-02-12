@@ -6,7 +6,10 @@
     <title>Ethan Nelson/Projects</title>
     <link rel='icon' href='menu.png'>
     <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="ScriptSheet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav id='myTopnav'>
@@ -17,22 +20,81 @@
             <img class='menu' src="menu.png" alt="ethans icon">
         </a>
     </nav>
-    <h1>Services</h1>
-    <p>
-        This could be 2ish flexbox's with projects and descriptions
-    </p>
 
-    <div class="flex-container">
-        <a href="https://github.com/einelson/RSA_Encryptor">RSA Encryption</a>
-        <div>2</div>
-        <div>3</div>  
-    </div>
 
+    <div class="container">
+        <h2>Projects</h2>
+        <p>
+            <strong>Note:</strong> This list includes all of the projects I have worked on. The last box contains projects I would like to attempt in the future, when time permits<br>
+            To see more documentation on the project please click the title to expand the box.
+        </p>
+
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Image Colorization</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                    Documentation here will include images and more detailed things in the future
+                </div>
+                <div class="panel-footer">
+                    <a href="https://github.com/einelson/Image_colorizer">Link to Project on github</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                Using Convolutional Neural Networks to Predict the colored counter part to a black and white image
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">RSA Encryption</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Documentation here will include images and more detailed things in the future
+                </div>
+                <div class="panel-footer">
+                    <a href="https://github.com/einelson/RSA_Encryptor">Link to Project on github</a>
+                </div>
+            </div>
+            <div class="panel-footer">
+                An impementation of RSA encrypton to send encrypted messages
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Upcoming Projects</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul>
+                        <li>Sodoku solver with CNN's</li>
+                        <li>Drone that will avoid walls and objects</li>
+                        <li>BCI prosthetic</li>
+                      </ul> 
+                </div>
+            </div>
+            <div class="panel-footer">
+                A list of things I would like to have done in the future
+            </div>
+          </div>
+        </div> 
+      </div>
     <footer>
           Find me on
-      <div>
-            <a href="https://www.linkedin.com/in/ethan-nelson/">LinkedLn</a>      </div>
-      <div style="padding-top: 15px">
+        <div>
+            <a href="https://www.linkedin.com/in/ethan-nelson/">LinkedLn</a>
+        </div>
+        <div style="padding-top: 15px">
           &copy; einelson.github.io
       </div>
   </footer>
