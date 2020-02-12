@@ -12,18 +12,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav id='myTopnav'>
-        <!-- <a href="resume.html">Resume</a> -->
-        <a class="active" href="projects.html">Projects</a>
-        <a href="index.html">About Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="nav_change()">
-            <img class='menu' src="menu.png" alt="ethans icon">
-        </a>
-    </nav>
+  <nav>
+    <a href="index.html">About me</a>
+    <a href="#">Projects</a>
+  <p class="navbar-text">Some text</p>
+</nav>
 
 
     <div class="container" style="padding-top: 50px;">
-        <h1>Projects</h1>
+        <h1 style='color:white;'>Projects</h1>
         <p>
             <strong>Note:</strong> This list includes all of the projects I have worked on. The last box contains projects I would like to attempt in the future, when time permits<br>
             To see more documentation on the project please click the title to expand the box.
@@ -36,7 +33,7 @@
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Image Colorization</a>
               </h4>
             </div>
-            <div id="collapse1" class="panel-collapse collapse in">
+            <div id="collapse1" class="panel-collapse collapse">
               <div class="panel-body">
                     <object width="100%" height="800" data="/image_colorization/final_report.pdf"></object>
                 </div>
@@ -89,14 +86,14 @@
           </div>
         </div> 
       </div>
-    <footer>
-          Find me on
-        <div style="padding-top: 20px;">
-            <a href="https://www.linkedin.com/in/ethan-nelson/">LinkedLn</a>
-            <a href="https://github.com/einelson">Github</a>
-        </div>
-        <div style="padding-top: 15px">
-          &copy; einelson.github.io
-      </div>
-  </footer>
+      <div class='footer'>
+        Find me on
+    <div>
+        <a href="https://www.linkedin.com/in/ethan-nelson/">LinkedLn</a>
+        <a href="https://github.com/einelson">Github</a>
+    </div>
+    <div style="padding-top: 15px">
+        &copy; einelson.github.io
+    </div>
+</div>
 </body>

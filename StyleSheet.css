@@ -1,39 +1,27 @@
-/* nav */
+body {
+   margin:0px;
+   background-image: url("/images/background.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
 nav {
    list-style-type: none;
    margin: 0;
    padding: 0;
-   padding-right: 25px;
    overflow: hidden;
-   font-family: Tahoma; 
+   font-family: Tahoma;
+   text-decoration: none; 
 }
 nav a {
    display: block;
-   color: rgba(128, 128, 128, 0.3);
+   color: white;
    padding: 16px 20px;
    text-align: center;
    text-decoration: none;
-   float: right;
+   float: left;
 }
-nav a:hover {
-   background-color: lightblue;
-   color: black;
-}
-nav .active {
-   background-color: rgb(6, 195, 253);
-   color: black;
-}
-nav .icon {
-   display: none;
-}
-.menu {
-   height:40px;
-   width:auto;
-}
-
-/* all */
-body {
-   margin:0px;
+nav a:hover{
+   text-decoration: none;
 }
 p {
    margin-top: 50px;
@@ -42,11 +30,7 @@ p {
    margin-left: 90px;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 18px;
-}
-h1 {
-   margin-left:90px;
-   font-size: 40px;
-   font-family: Tahoma; 
+   color: white;
 }
 img {
    height:auto;
@@ -54,39 +38,21 @@ img {
 }
 
 /* footer */
-footer {
-   list-style-type: none;
+.footer{
    text-align:center;
-   background-color: grey;
-   color: whitesmoke;
-   margin: 0px;
-   padding:20px;
-   overflow:hidden;
-}
-footer a {
-   /* padding: 100px; */
-   color: rgb(6, 195, 253);
-   padding: 8px 10px;
-   text-decoration: none;
-   margin: 5px;
+   padding-bottom: 30px;
+   color:white;
    font-family: Tahoma;
-}
-footer a:hover {
-   color: black;
+   font-size: 15;
 }
 
 /* index */
 .container{
    max-width: 70%;
    padding-bottom: 50px;
+   padding-top: 50px;
 }
 
-/* projects */
-
-/* resume */
-object {
-   float: none;
-}
 
 @media screen and (max-width: 600px) {
    nav a {display: none;}
@@ -130,4 +96,4 @@ object {
       margin-right: 30px;
       margin-left: 30px;              
    }
-}
+} 
