@@ -1,57 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ethan Nelson | About</title>
+    <title>Ethan Nelson | Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="placeholders/icons/n2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="metis-assets/icons/n2.png">
     <script src="js/main.js"></script>
   </head>
-  <body class="bg-body text-body font-body">
-    <div class="container mx-auto px-4"> 
+  <body class="antialiased bg-body text-body font-body">
+    <div class=""> 
     
-      <nav class="flex flex-wrap items-center justify-between p-4">
-        <div class="lg:order-1 w-auto lg:text-center"><a class="text-xl text-indigo-500 font-semibold" href="#"><img src="placeholders/icons/n2.png" alt="Nelson logo" width="100"></a></div>
-        <div class="block lg:hidden">
-          <button class="navbar-burger flex items-center py-2 px-3 text-indigo-500 rounded border border-indigo-500">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
+
+    
+      <!-- desktop nav -->
+      <section>
+        <div class="container px-4 mx-auto">
+          <nav class="flex items-center py-6">
+            <a class="text-3xl font-semibold leading-none" href="#"><img class="h-10" src="metis-assets/icons/n2.png" alt="" width="auto"></a>
+            <div class="lg:hidden ml-auto">
+              <button class="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">
+                <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Mobile menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+            <ul class="hidden lg:flex items-center space-x-12 ml-auto mr-12">
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="/about_me/about_me.html">About me</a></li>
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="projects/projects.html">Projects</a></li>
+              <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="work_experience/work_experience.html">Work Experience</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="navbar-menu hidden lg:order-1 lg:block w-full lg:w-2/5"><a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-blue-700" href="#">Home</a><a class="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-blue-700" href="projects.html">Projects</a><a class="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-blue-700" href="resume.html">Resume</a></div>
-      </nav>
-    
-      <section class="py-12 px-4 text-center"><div class="w-full max-w-2xl mx-auto">
-          <h2 class="text-5xl mt-2 mb-6 leading-tight font-heading">Machine Learning | Computer Science | Innovator</h2>
+
+        <!-- mobile nav -->
+        <div class="hidden navbar-menu relative z-50">
+          <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+              <a class="mr-auto text-3xl font-semibold leading-none" href="#"><img class="h-10" src="./metis-assets/icons/n2.png" alt="" width="auto"></a>
+              <button class="navbar-close">
+                <svg class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blueGray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul>
+                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./about_me/about_me.html">About me</a></li>
+                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./projects/projects.html">Projects</a></li>
+                <li><a class="text-sm text-blueGray-400 hover:text-blueGray-500" href="./work_experience/work_experience.html">Work Experience</a></li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <p class="my-4 text-xs text-blueGray-400">
+                <span>Get in touch</span>
+                <a class="text-blue-600 hover:text-blue-600 underline" href="#">einelson8i@gmail.com</a>
+              </p>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- image section -->
+      <section>
+        <div class="md:pb-20 bg-top bg-cover bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;h=450&amp;q=80&amp;blend=1e293b&amp;sat=30&amp;blend-mode=multiply')">
+          <div class="container px-4 mx-auto">
+            <div class="py-12 text-center">
+              <div class="max-w-lg mx-auto mb-8">
+                <h2 class="text-3xl md:text-4xl mb-4 text-white font-bold font-heading">
+                  <span>Ethan Nelson</span>
+                </h2>
+                <p class="text-blueGray-400 leading-relaxed">Student at BYU-I | Data Science Intern<br>
+                 I am interested in data science, machine learning and making a difference in the world</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden navbar-menu relative z-50">
+          <div class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"></div>
         </div>
       </section>
     
-      <section class="py-12 px-4"><div class="flex flex-wrap items-center text-center lg:text-left -mx-2">
-          <div class="lg:w-1/2 lg:pr-10 mt-10 lg:mt-0 order-1 lg:order-none">
-            <span class="text-xl font-semibold">About Me</span>
-            <h2 class="mt-4 mb-6 font-heading ">
-              I am Ethan Nelson. I am currently studying computer science at Brigham Young University-Idaho and am in my final semester.<br>
-              The most defining feature I have is my ability to problem solve. I have learned that there will always be someone who may have skills that I do not posses. Skills are transferable, One can learn skills by study, proactive or memorization. Problem solving is a skill that can not easily be learned or transferred. It takes years to train our minds to think to focus on solving the root of the problem effectively rather than focusing on the symptoms of the problem.<br>
-              What I can offer you is a person who understands how to find the root of a problem and find creative and effective ways to solve them. I am open to new ideas, techniques and would consider myself a quick learner.<br>
-              I believe that I would be a good fit for any role that pushes me to my limits because that is the only way that we can improve ourselves.
-            </h2>
+      <!-- description -->
+      <section class="py-20">
+        <div class="container px-4 mx-auto">
+          <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-6">
+              <h2 class="text-4xl md:text-5xl mt-4 font-bold font-heading">Brief introduction</h2>
+            </div>
+            <p class="text-xl mb-6 leading-loose text-blueGray-400">Hi there, I am Ethan Nelson and I am currently a student at Brigham Young University-Idaho studying computer science.<br>There are a ton of programmers, data scientists and developers out there so what makes me different?</p>
+            
+              <li class="text-xl leading-loose text-blueGray-400"><b>I embrace the challenge-</b> I have seen too many people shrink during challenges. Challenges give us a chance to learn new skills, stretch our abilities and understand our current limits. <br>
+                Recently I had the opportunity to do data manipulation with a file that was formatted terribly. I made a plan then faced the challenge head on. I was able to complete the challenge because I planned and kept my head on. </li>
+              <li class="text-xl leading-loose text-blueGray-400"><b>I am learnable and adaptable-</b> I recognize that I do know possess all knowledge. I am always ready to expand what I know. I love to hear others opinions and views. Because I understand there are always things that need to be learned and change I am a quick learner.<br>
+                I once bought a car that ended up needing extensive repairs. I did not have any previous experience in automotive maintenance. I found those who knew about auto repairs and together we fixed my car. I later used those skills to do a full restoration on a 1966 mustang.</li>
+              <li class="text-xl leading-loose text-blueGray-400"><b>Synergy and teamork-</b> Teamwork is important. I enjoy working alone as much as the next guy, but effective teamwork can more than double the output. I always work hard with my team even if I may not agree with what the plan or course of action is.<br>
+                I did research on the effectiveness of paired programming. We found that 2 people working in a team had more than 2x the output than if both people were working separately. This was because the team members were able to catch mistakes, combine knowledge and encourage each other.</li>
+            
+            <p class="text-xl leading-loose text-blueGray-400"><br>I am a hard worker, I believe that I will make a positive difference in the world and that we are in control of who we are and what we do.</p>
           </div>
-          <div class="lg:w-1/2 px-2"><img src="placeholders/pictures/about_pic.jpg" alt=""></div>
         </div>
       </section>
     
-      <footer>
-        <div class="flex flex-wrap items-center py-4 px-4 border-b">
-          <div class="w-full lg:w-1/5 text-center lg:text-left"><a class="text-xl text-indigo-500 font-semibold" href="#"></a></div>
-          <div class="w-full lg:w-3/5 mt-4 lg:mt-0 text-center"><a class="inline-block mx-4 mb-4 lg:mb-0 text-blue-900 hover:text-blue-700" href="https://github.com/einelson">Github</a><a class="inline-block mx-4 mb-4 lg:mb-0 text-blue-900 hover:text-blue-700" href="https://www.linkedin.com/in/ethan-nelson/">LinkedIn</a></div>
+      <!-- footer -->
+      <section class="py-20">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
+      
+            <div class="w-full lg:w-1/5 px-3">
+              <p class="mb-2 lg:mb-4 lg:text-lg font-bold font-heading text-blueGray-800">Email</p>
+              <p class="lg:text-lg text-blueGray-400">einelson8i@gmail.com</p>
+            </div>
           </div>
-        <div class="py-4 text-center"><span class="block md:inline-block mb-4 md:mb-0 mx-3">© 2020 Ethan Nelson</span></div>
-      </footer>
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <p class="text-xs text-blueGray-400">© 2021. All rights reserved.</p>
+            <div><a class="inline-block px-2" href="https://github.com/einelson"><img src="metis-assets/icons/github.png" alt="" width='15%'></a><a class="inline-block px-2" href="https://www.linkedin.com/in/ethan-nelson/"><img src="metis-assets/icons/linkedin.png" width='15%' alt=""></a></div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
