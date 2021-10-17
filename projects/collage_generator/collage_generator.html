@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jquery and nav -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/assets/nav.js"></script>
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="/assets/favicon.ico"/>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/assets/website.css">
+
+        <!-- specific to project -->
+        <link rel="stylesheet" href="./collage_generator.css">
+        <script src="./collage_generator.js"></script>
+
+        <!-- site info -->
+        <title>einelson</title>
+    </head>
+
+
+    <body id='body'>
+        <!-- nav bar -->
+        <div id='nav-placeholder'></div>
+
+
+        <!-- main items -->
+        <div class="row" id=row>
+            <div class="col-lg-6">
+                <h1 id=title><a href='https://github.com/einelson/collage_generator'>Collage Generator</a></h1>
+                <p id=paragraph>Collage generator is a pseudo random way to create collages. You can specify what you would like for the border, rotation and size. This is a basic creator but was a very fun project. You can add in as many pictures as you would like.</p>
+                <p id=paragraph>The image to the right was composed of around 28 photos and has a final size of 3000 x 3000 pixels.</p>
+                <p id=paragraph>The image generated will have a little bit of green on the border due to pixelation.</p>
+                <p id=paragraph>To download the image press the camera button on the toolbar where your collage has been generated.</p>
+            </div>
+            <div class="col-lg-6">
+                <img id=image src="./data/Nelson3.png">
+            </div>
+          </div>
+
+          <!-- other -->
+          <div class="row" id=row>
+            <div class="col-lg-6">
+
+                <!-- form for image generator -->
+                <form id=collage-generator-form>
+                    <!-- upload images -->
+                    <p>Upload files (you will need to refresh the page to remove files)</p>
+                    <input id=files type="file" multiple/>    
+                    <div id='result'></div>
+
+                    <!-- border -->
+                    <label for='border'>Choose a border style:</label>
+                    <select id=border name="border">
+                        <option value='border'>Border</option>
+                        <option value='no_border'>No border</option>
+                    </select>
+
+                    <!-- max and min rotation -->
+                    <label for='clock'>Chooses max and min rotation:</label>
+                    <input class=slider name='counter' id='counter-in' type="range" min="-180" max="0" value="-180">
+                    <input class=slider name='clock' id='clock-in' type="range" min="0" max="180" value="180">
+                    <p>Rotation: <span id="counter-out"></span> to <span id="clock-out"></span></p>
+
+                    <!-- submit -->
+                    <button type="button" onclick="generateCollage()">Generate</button>
+                </form>
+
+            </div>
+
+            <!-- image output space -->
+            <div class="col-lg-6">
+                <!-- empty space to hold image for now -->
+                <p id=paragraph>Sorry, I have not finished implementing this project to the web. Be sure to check it out on my Github or email me for a demo.</p>
+            </div>
+          </div>
+
+
+        <!-- footer -->
+        <div id='footer-placeholder'></div>
+
+    </body>
+</html>

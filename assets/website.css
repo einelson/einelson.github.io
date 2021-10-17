@@ -1,0 +1,41 @@
+/* all */
+#body{
+    overflow-x: hidden;
+    background-color: rgb(34,34,34);
+    color: lightslategray;
+    padding: 1em;
+}
+
+#title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+#paragraph{
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: lightslategrey;
+    display: block;
+}
+
+#image{
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#row{
+    margin-top: 4em;
+}
+
+#pro-exp{
+    width: 80%;
+    height: 80em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
