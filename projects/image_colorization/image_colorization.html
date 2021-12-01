@@ -29,7 +29,7 @@
         <div class="row" id=row>
             <div class="col-lg-6">
                 <h1 id=title><a href='https://github.com/einelson/Image_colorizer'>Image Colorization</a></h1>
-                <p id=paragraph>The image colorization project was based around seeing if you could predict the colored counterpart of a greyscale image.</p>
+                <p id=paragraph>The image colorization project was based around seeing if you could predict the colored counterpart of a grayscale image.</p>
                 <p id=paragraph>The model was based off of learning on a broad set of images and the goal was to predict image with any amalgam of colors.</a>.</p>
                 <p id=paragraph>The model built was not complex enough or trained enough to predict colorful images well and this particular model loves to predict reds, blues and oranges.</p>
                 <p id=paragraph>In order to fine tune this in the future I would make the image prediction less generic and be used to predict only like-images: images that come from the same source and have the same final format..</p>
@@ -48,30 +48,30 @@
                 <h2 id=title>Use Cases</h2>
                 <p id=paragraph>Why use image colorization, why not just use colored images?</p>
                 <p id=paragraph>Everything takes up some sort of space. Images are generally made up of 3 channels consisting of R(red), G(green), B(blue). When sending or storing data you need to save the 3 channels that the image consists of.</p>
-                <p id=paragraph>Lets say you want to send or store a large image in an enviroment where there is restrictions in space, or speed in sending the image. By converting the image from RGB to a L(perceptual lightness) A(red, green) B(blue, yellow) colorscale and only using the L channel you are effectivley saving 3x the space. The L channel is considered greyscale ond only takes up one channel.</p>
+                <p id=paragraph>Lets say you want to send or store a large image in an environment where there is restrictions in space, or speed in sending the image. By converting the image from RGB to a L(perceptual lightness) A(red, green) B(blue, yellow) color scale and only using the L channel you are effectively saving 3x the space. The L channel is considered grayscale ond only takes up one channel.</p>
                 <p id=paragraph>Using image colorization we recreate the exact image when it is needed. While the algorithm I built as an example for this is not close to production worthy it is a working example of how this is an achievable goal.</p>
             </div>
         </div>
 
 
         <!-- demo -->
-        <div class="row" id=row>
-            <div class="col-lg-6">
+        <!-- <div class="row" id=row>
+            <div class="col-lg-6"> -->
                 <!-- form for image generator -->
-                <form id=color-generator-form>
+                <!-- <form id=color-generator-form> -->
                     <!-- upload images -->
-                    <p>Upload files</p>
+                    <!-- <p>Upload files</p>
                     <input id=files type="file"/>    
-                    <div id='result'></div>
+                    <div id='result'></div> -->
 
                     <!-- submit -->
-                    <button type="button" onclick="generateColor()">Generate</button>
-                </form>
-            </div>
+                    <!-- <button type="button" onclick="generateColor()">Generate</button> -->
+                <!-- </form> -->
+            <!-- </div>
             <div class="col-lg-6">
                 <p id=paragraph>I have not yet implemented the image colorization in this web app. Please feel free to take a look at the working version on my Github reop or email me and I will be happy to show you a demo.</p>
             </div>
-        </div>
+        </div> -->
 
         <!-- footer -->
         <div id='footer-placeholder'></div>
