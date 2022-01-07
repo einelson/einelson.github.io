@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jquery and nav -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/assets/nav.js"></script>
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="/assets/favicon.ico"/>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/assets/website.css">
+
+        <!-- project specific -->
+        <link rel='stylesheet' href='./random_brain.css'>
+
+        <!-- site info -->
+        <title>einelson</title>
+    </head>
+
+
+    <body id='body'>
+        <!-- nav bar -->
+        <div id='nav-placeholder'></div>
+
+
+        <!-- main items -->
+        <div class="row" id=row>
+            <div class="col-lg-6">
+                <h1 id=title><a href='https://github.com/einelson/Random-brain'>Random Brain</a></h1>
+                <p id=paragraph>Random Brain is a machine learning algorithm I developed to increase the accuracy of the neural network.</p>
+                <p id=paragraph>Random Brain is based off of a random forest, where it is a vote based ensemble method. The goal was to combine the flexibility of the neural network with the strength of vote based machine learning.</p>
+                <p id=paragraph>Please note that Random Brain is still in development, but I am working on doing further testing and eventually making this a pip installable package.</p>
+                <p id=paragraph></p>
+            </div>
+            <div class="col-lg-6">
+                <img id=image-color src="./data/rb.jpg">
+            </div>
+        </div>
+
+        <!-- use cases -->
+        <div class="row" id=row>
+            <div class="col-lg-6">
+                <img id=image-color src="./data/random brain.png">
+            </div>
+            <div class="col-lg-6">
+                <h2 id=title>Origination</h2>
+                <p id=paragraph>There are limitations to all machine learning methods. When I was doing research on predicting the state of the human eye using EEG patterns I learned that the max accuracy I could predict was around 96.5%. To me this was interesting because EEG patters are patterns that originate from the brain and a neural network is modeled after the brain. I thought the accuracy should be higher. The realization came to me, our brain uses many neurons to perform even a single action. Along with that, our brain is composed of may different sections optimized for movement, prediction, problem solving and vision. How could I expect a single neural network to predict and mimic a network as complex as this.</p>
+                <p id=paragraph>This is where the random brain idea was born. Since our brain is composed of many interconnecting networks, if I wanted to do better at predicting brain patterns I had to make my model relate closer to how a brain thinks.</p>
+                <p id=paragraph>Random brain is a simple module in which a user can add in an unlimited number of neural network models. On prediction the random brain will return the votes cast by the neural networks in the brain. This way we can take the strengths of each model.</p>
+                <p id=paragraph>After importing my models which had an accuracy rate of 93.5–96.5% I ran a prediction on the random brain. The output was 100% accuracy on this test dataset.</p>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <div id='footer-placeholder'></div>
+
+    </body>
+</html>
